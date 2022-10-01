@@ -24,7 +24,7 @@ let stiker = await sticker(null, global.API(`https://telegra.ph/file/d34b2ab2cb2
      }}
   })
   
-let audio = `https://raw.githubusercontent.com/WH-MODS-BOT/Sounds-kane/master/${command}.mp3`
+let audio = `https://raw.githubusercontent.com/WH-MODS-BOT/Soundskane/master/${command}.mp3`
 
 await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
