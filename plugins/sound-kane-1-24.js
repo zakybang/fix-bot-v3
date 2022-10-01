@@ -14,13 +14,13 @@ let stiker = await sticker(null, global.API(`https://telegra.ph/file/d34b2ab2cb2
  conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, { fileLength: 100, contextInfo: {
           externalAdReply :{
           showAdAttribution: true,
-    mediaUrl: sgc,
+    mediaUrl: sig,
     mediaType: 2,
     description: 'WH MODS BOT MD 𝑿 WH MODS DEV', 
     title: `${command} Sedang Di Proses`,
     body: botdate,
     thumbnail: await(await fetch(pp)).buffer(),
-    sourceUrl: sgc
+    sourceUrl: sig
      }}
   })
   
@@ -35,15 +35,14 @@ ptt: false, seconds: 0,contextInfo: {
     description: 'www.instagram.com/_ctzhid',
     title: "Now Playing...",
     body: wm,
-    thumbnail: await (await fetch('https://telegra.ph/file/c72133b197a68d3ea514d.jpg')).buffer(),
+    thumbnail: await (await fetch('https://i.ibb.co/XZrK6yQ/transformers.jpg')).buffer(),
     sourceUrl: 'www.instagram.com/_ctzhid'
  	  }
      }
     })
 }
 
-handler.help = new Array(24).fill('mangkane').map((v, i) => v + (i + 1))
-handler.command = /^mangkane[1-24]?$/i
+handler.command = /^(mangkane1|mangkane2|mangkane3|mangkane4|mangkane5|mangkane6|mangkane7|mangkane8|mangkane9|mangkane10|mangkane11|mangkane12|mangkane13|mangkane14|mangkane15|mangkane16|mangkane17|mangkane18|mangkane19|mangkane20|mangkane21|mangkane22|mangkane23|mangkane24)$/i
 
 handler.limit = true
 
