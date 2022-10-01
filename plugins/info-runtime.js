@@ -20,7 +20,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let teks = 'Pilih Dibawah kak Model Runtime Nya ! o(〃＾▽＾〃)o'
 const sections = [
    {
-	title: `${htjava} SOUND MENU –––––––––·•`,
+	title: `${htjava} Runtime –––––––––·•`,
 	rows: [
     {title: "Runtime V1", rowId: ".runtime1"},
     {title: "Runtime V2", rowId: ".runtime2"},
