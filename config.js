@@ -40,31 +40,38 @@ global.sfb = 'https://www.facebook.com/' // facebook
 global.syt = 'https://www.youtube.com/' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
 
 /*============== PAYMENT ==============*/
-global.pdana = '082127487538' //dana
-global.povo = '082127487538' //ovo
-global.pgopay = '082127487538' //gopay
-global.plinkaja = '082127487538' //link aja
-global.ppulsa = '082127487538' //telkomsel
-global.ppulsa2 = '082127487538' // kalau ada kartu lain isi aja
+global.pdana = '08XXXXXXXXXX' //dana
+global.povo = '08XXXXXXXXXX' //ovo
+global.pgopay = '08XXXXXXXXXX' //gopay
+global.plinkaja = '08XXXXXXXXXX' //link aja
+global.ppulsa = '08XXXXXXXXXX' //telkomsel
+global.ppulsa2 = '08XXXXXXXXXX' // kalau ada kartu lain isi aja
 global.psaweria = 'https://saweria.com/mrw4h1d'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6283899174624'
-global.nomorown = '6282127487538'
+global.nomorbot = '62XXXXXXXXXXX'
+global.nomorown = '62XXXXXXXXXXX'
 global.namebot = 'WH-MODS-BOT-V1'
 global.nameown = 'WH MODS DEV'
 
+/*============== Github Thanks To ==============*/
+global.namagithub = 'Nama Github Belum Diisi' // nama github lu
+global.linkgithub = 'Link Githu Belum Diisi' // tarok link github lu
+
+// klau kgk ada github kasih tanda '-' aja biar kgk error
+
 /*============== APIKEY SIMPEL ==============*/
 global.zenzkey = 'b8040941f7'
-global.lolkey = '357d3c85079c4e0818731e6b' // PUNYA WAHID  8e66d0934cf741bfd2182c16
+global.lolkey = 'e54205a4ca2caa368cc067bb' // PUNYA WAHID  8e66d0934cf741bfd2182c16
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6282127487538', 'WH MODS DEV', true],
-  ['6283899174624', 'WH-MODS-BOT-V1', true]
-//  ['6288298925386', 'WH-MODS-BOT-V2', true],
-//  ['79917357842', 'WH-MODS-BOT-V3', true] 
+  ['628XXXXXXXXXX', 'WH MODS DEV', true],
+  ['-', 'ISI KALAU ADA', true],
+  ['-', 'ISI KALAU ADA', true],
+  ['-', 'ISI KALAU ADA', true],
+  ['-', 'ISI KALAU ADA', true]
     //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
