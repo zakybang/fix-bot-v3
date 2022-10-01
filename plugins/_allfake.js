@@ -63,7 +63,7 @@ handler.all = async function (m) {
 					sourceUrl: "https://github.com/WH-MODS-BOT",					
 				}
 			}
-		}
+		} 
 		global.fakeig = {
          contextInfo: { externalAdReply: { showAdAttribution: true,
             mediaUrl: "https://Instagram.com/_ctzhid",
