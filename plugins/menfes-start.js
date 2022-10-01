@@ -41,7 +41,7 @@ ${htjava} ${txt}
 `
 	await conn.sendButton(m.chat, suks, wm, null, [['Menu', '/menu']], m, { mentions: conn.parseMention(suks) })
 }
-handler.help = ['menfess2 <pesan>']
+handler.help = ['menfess <pesan>']
 handler.tags = ['menbalas']
-handler.command = /^(menfess2|confess2|menfes2|confes2)$/i
+handler.command = /^(menfess|confess|menfes|confes)$/i
 export default handler
