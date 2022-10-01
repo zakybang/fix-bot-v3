@@ -14,13 +14,13 @@ let stiker = await sticker(null, global.API(`https://telegra.ph/file/d34b2ab2cb2
  conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, { fileLength: 100, contextInfo: {
           externalAdReply :{
           showAdAttribution: true,
-    mediaUrl: sgc,
+    mediaUrl: sig,
     mediaType: 2,
     description: 'WH MODS BOT MD 𝑿 WH MODS DEV', 
     title: `${command} Sedang Di Proses`,
     body: botdate,
     thumbnail: await(await fetch(pp)).buffer(),
-    sourceUrl: sgc
+    sourceUrl: sig
      }}
   })
   
