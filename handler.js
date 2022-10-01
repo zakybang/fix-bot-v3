@@ -1293,7 +1293,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupname: await this.getName(id),
                                 membercount: groupMetadata.participants.length
                             })
-    conn.sendButtonDoc(id, text, wm, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'WHMODSDEV', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    /*conn.sendButtonDoc(id, text, wm, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'WHMODSDEV', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow",
     mediaType: 2, 
     description: "https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow", 
@@ -1301,6 +1301,18 @@ export async function participantsUpdate({ id, participants, action }) {
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
     sourceUrl: snh
+     }}
+  }) */
+  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+  let whmods = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
+  conn.sendButtonImg(id, action === 'add' ? wel : lea, text, wm + botdate, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'WHMODSDEV', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow",
+    mediaType: 2, 
+    description: "https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow", 
+    title: 'WH-MODS-BOT-MultiDevice',
+    body: wm,
+    thumbnail: await(await fetch(whmods)).buffer(),
+    sourceUrl: sig
      }}
   })
 /*this.sendHydrated(id, text, '➞' + await this.getName(id), await (await fetch((action == 'add' ? wel : lea))).buffer(), sgc, (action == 'add' ? '💌 WELCOME' : '🐾 BYE'), user.split`@`[0], '🌹 USER', [
